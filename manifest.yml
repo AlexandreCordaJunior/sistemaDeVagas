@@ -1,0 +1,12 @@
+---
+applications:
+
+  - name: sistemadevagas
+    memory: 1024M
+    timeout: 300
+    random-route: true
+    path: ./target/sistemadevagas-0.0.1-SNAPSHOT.war
+    buildpacks:
+      - sap_java_buildpack
+    env:
+      TARGET_RUNTIME: tomcat
